@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<h1>
+Cheat Sheet
+</h1>
+</head>
+<body>
+  <div>
+    <script>
+      document.write("<h2> Variables </h2>");
+      document.write("\"\" is an empty " + typeof("") + "<br>");
+      document.write("0 is a " + typeof(0) + "<br>");
+      document.write("1 is a " + typeof(1) + "<br>");
+      document.write("\"0\" is a " + typeof("0") + "<br>");
+      document.write("\"1\" is a " + typeof("1") + "<br>");
+      document.write("[] is an " + typeof([]) + "<br>");
+      document.write("{} is an " + typeof({}) + "<br>");
+      document.write("null is an " + typeof(null) + "<br>");
+      document.write("undefined is " + typeof(undefined) + "<br>");
+      document.write("NaN is a " + typeof(NaN) + "<br>");
+      document.write("Infinity is a " + typeof(Infinity) + "<br>");
+      document.write("console is an " + typeof(console) + "<br>");
+      document.write("console.log is a " + typeof(console.log) + "<br>");
+      document.write("document is an " + typeof(document) + "<br>");
+      document.write("document.write is a " + typeof(document.write) + "<br>");
+      document.write("true is a " + typeof(true) + "<br>");
+      document.write("false is a " + typeof(false) + "<br>");
+      
+      document.write("<h2> arithmetic operations </h2>");
+      
+      document.write("\"2\" + \"5\": Result is the " + (typeof("2" + "5")) + " (" + ("2" + "5") + ")<br>");
+      document.write("2 + \"5\": Result is the " + (typeof(2 + "5")) + " (" + (2 + "5") + ")<br>");
+      document.write("\"2\" + 5: Result is the " + (typeof("2" + 5)) + " (" + ("2" + 5) + ")<br>");
+
+      document.write("\"2\" - \"5\": Result is the " + (typeof(Number("2") - Number("5"))) + " (" + (Number("2") - Number("5")) + ")<br>");
+      document.write("\"2\" - 5: Result is the " + (typeof(Number("2") - 5)) + " (" + (Number("2") - 5) + ")<br>");
+      document.write("2 - \"5\": Result is the " + (typeof(2 - Number("5"))) + " (" + (2 - Number("5")) + ")<br>");
+
+      document.write("\"2\" / \"5\": Result is the " + (typeof(Number("2") / Number("5"))) + " (" + (Number("2") / Number("5")) + ")<br>");
+      document.write("\"2\" / 5: Result is the " + (typeof(Number("2") / 5)) + " (" + (Number("2") / 5) + ")<br>");
+      document.write("2 / \"5\": Result is the " + (typeof(2 / Number("5"))) + " (" + (2 / Number("5")) + ")<br>");
+
+      document.write("\"2\" * \"5\": Result is the " + (typeof(Number("2") * Number("5"))) + " (" + (Number("2") * Number("5")) + ")<br>");
+      document.write("\"2\" * 5: Result is the " + (typeof(Number("2") * 5)) + " (" + (Number("2") * 5) + ")<br>");
+      document.write("2 * \"5\": Result is the " + (typeof(2 * Number("5"))) + " (" + (2 * Number("5")) + ")<br>");
+
+      document.write("\"2\" % \"5\": Result is the " + (typeof(Number("2") % Number("5"))) + " (" + (Number("2") % Number("5")) + ")<br>");
+      document.write("\"2\" % 5: Result is the " + (typeof(Number("2") % 5)) + " (" + (Number("2") % 5) + ")<br>");
+      document.write("2 % \"5\": Result is the " + (typeof(2 % Number("5"))) + " (" + (2 % Number("5")) + ")<br>");
+
+      document.write("10 + 5 % 2: Result is the " + (typeof(10 + 5 % 2)) + " (" + (10 + 5 % 2) + ")<br>");
+      document.write("10 + (5 % 2): Result is the " + (typeof(10 + (5 % 2))) + " (" + (10 + (5 % 2)) + ")<br>");
+      document.write("(10 + 5) % 2: Result is the " + (typeof((10 + 5) % 2)) + " (" + ((10 + 5) % 2) + ")<br>");
+      document.write("10 * 5 % 2: Result is the " + (typeof(10 * 5 % 2)) + " (" + (10 * 5 % 2) + ")<br>");
+
+
+      document.write("<h2> == </h2>");
+
+      document.write("0 == 1 ? \"fish\" : \"duck\" : Result is " + (0 == 1 ? "fish" : "duck") + "<br>");
+      document.write("(0 == 1) ? \"fish\" : \"duck\" : Result is " + ((0 == 1) ? "fish" : "duck") + "<br>");
+      document.write("0 == (1 ? \"fish\" : \"duck\") : Result is " + (0 == (1 ? "fish" : "duck")) + "<br>");
+
+      
+      document.write("<h2> Truthy/Falsly </h2>");
+      
+      document.write("0 is " + (0 ? "Truthy" : "Falsy") + "<br>");
+      document.write("1 is " + (1 ? "Truthy" : "Falsy") + "<br>");
+      document.write("2 is " + (2 ? "Truthy" : "Falsy") + "<br>");
+      document.write("\"0\" is " + ("0" ? "Truthy" : "Falsy") + "<br>");
+      document.write("\"1\" is " + ("1" ? "Truthy" : "Falsy") + "<br>");
+      document.write("\"2\" is " + ("2" ? "Truthy" : "Falsy") + "<br>");
+      document.write("\"cow\" is " + ("cow" ? "Truthy" : "Falsy") + "<br>");
+      document.write("\"\" is " + ("" ? "Truthy" : "Falsy") + "<br>");
+      document.write("null is " + (null ? "Truthy" : "Falsy") + "<br>");
+      document.write("undefined is " + (undefined ? "Truthy" : "Falsy") + "<br>");
+      document.write("NaN is " + (NaN ? "Truthy" : "Falsy") + "<br>");
+      document.write("Infinity is " + (Infinity ? "Truthy" : "Falsy") + "<br>");
+      document.write("[] is " + ([] ? "Truthy" : "Falsy") + "<br>");
+      document.write("[0] is " + ([0] ? "Truthy" : "Falsy") + "<br>");
+      document.write("{} is " + ({} ? "Truthy" : "Falsy") + "<br>");
+      document.write("{vegetable: \"cabbage\"} is " + ({vegetable: "cabbage"} ? "Truthy" : "Falsy") + "<br>");
+
+      
+      document.write("<h2> &&/|| </h2>");
+      
+      document.write("\"dog\" || \"cat\" || \"cow\" will return '" + ("dog" || "cat" || "cow") + "'<br>");
+      document.write("\"dog\" && \"cat\" && \"cow\" will return '" + ("dog" && "cat" && "cow") + "'<br>");
+
+      
+
+    </script>
+  </div>
+</body>
